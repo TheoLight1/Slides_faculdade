@@ -1,0 +1,460 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #363062;
+    
+}
+
+span {
+    color: #F99417;
+}
+
+
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-family: "Poppins" ;
+    border-right:4px solid #F5F5F5;
+    width: 12ch;
+    font-size: 6rem;
+    white-space: nowrap;
+    color: #F5F5F5;
+    overflow-x: hidden;
+    animation: typing 2s steps(12), blinking 0.5s infinite ;
+    
+}
+
+@keyframes typing {
+    from {
+        width:0;
+    }
+    
+}
+
+nav {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid blue;
+    background: #f0db4f;
+    z-index: 999;
+    opacity: 0.90;
+    
+}
+
+.teste1 {
+    position: absolute;
+    bottom: -50px;
+    left: 46%;
+}
+
+.titulo__h1 {
+    margin-bottom: 1rem;
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    color:#363062;
+}
+
+.titulo__h1::before {
+    position: absolute;
+    content: "";
+    border: 1px solid #F99417;
+    background-color: #F99417;
+   
+    border-radius: 5px;
+    animation: teste 15ms;
+    animation-timeline: view();
+    animation-range: cover 0% cover 90%;
+
+}
+
+@keyframes teste {
+    from {
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    
+    }to {
+        width: 50%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+
+/* .titulo__h1:hover::before {
+    width: 50%;
+} */
+
+
+
+
+.git{
+    text-decoration: none;
+    font-family: "Poppins";
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+    
+
+}
+
+.git::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #4D4C7D;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.git:hover::before {
+    width: 100%;
+    
+    height: 100%;
+}
+
+.git:hover {
+    color: white;
+}
+
+ul{
+    list-style-type: none; 
+}
+
+@keyframes upDown {
+    
+    to {
+    transform: translateY(30px);
+    }
+}   
+
+
+
+
+.div-seta {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+    
+    animation: upDown 2s infinite alternate ;
+    
+}
+
+.seta {  
+    margin-bottom: 100px;
+    width: 50px;  
+    
+}
+
+
+h1{
+    text-align: center;
+    font-family: "Poppins";
+    color: rgb(0, 0, 0);
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+    
+}
+
+.container {
+    background: #fefeff;
+   
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    
+    
+    
+}
+
+.container__conteudo {
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+    width: 80%;
+}
+
+
+
+
+
+
+
+.container__paragrafo {
+    
+    color: #363062;
+    font-size: 1rem;
+    border-radius: 10px;
+    
+    font-family: "Poppins";
+    
+}
+
+
+
+.container__calculadora{
+    width: 100%;
+    
+    background: #4D4C7D;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container__calculadora__conteudo{
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+.paragrafo__calculadora{
+    color: white;
+    font-family: "Poppins";
+}
+
+.lista-bib {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: appear 10ms ease-in;
+    animation-timeline: view();
+    animation-range: cover 0% cover 20%;
+}
+
+.react, 
+.bootstrap{
+    font-family: "Poppins";
+}
+
+.bootstrap-link {
+    position: relative;
+    border: 1px solid rgb(108, 8, 190);
+    border-radius:10px;
+    padding: 10px;
+}
+
+.bootstrap-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(108, 8, 190);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+
+}
+
+.bootstrap-link:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.bootstrap-link:hover {
+    color: white;
+}
+
+.react {
+    position: relative;
+    border: 1px solid rgb(0, 174, 255) ;
+    color: rgb(0, 174, 255);
+    border-radius:10px;
+    padding: 10px;
+}
+
+
+
+.react-link {
+    color: rgb(0, 174, 255);
+}
+
+
+.react-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(0, 174, 255);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+
+}
+
+.react-link:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.react-link:hover {
+    color: white;
+}
+
+.link__lista{
+    
+    text-decoration: none;
+}
+
+
+
+
+
+.calc {
+   width: 70%;
+   border-radius: 10px;
+   transition: 0.3s ease-in;
+   cursor: pointer;
+}
+
+.calctrans {
+    width: 30%;
+}
+
+
+
+
+.calculadora__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.codigotrans:hover {
+    transform: scale(1.12);
+}
+.calctrans:hover {
+    transform: scale(1.1);
+}
+
+.rodape {
+    border-top: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rodape__conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape__p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+}
+
+.faculdade {
+    color: rgb(28, 28, 177);
+}
+ 
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.mudar {
+    margin-bottom: 16px;
+    color: white;
+    
+}
+
+/* tentando animar os textos */
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        scale: 0;
+    } 
+    100% {
+        scale: 1;
+    }
+        
+}
+
+.js {
+    animation: appear 5ms ease-in;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+    
+}
+
+@media (max-width: 1400px) {
+    .titulo {
+        left: 25%;
+
+    }
+
+    .titulo__h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container__paragrafo,.paragrafo__calculadora, .react, .bootstrap, .rodape__p {
+        font-size: 1.3rem;
+    }
+}
+
